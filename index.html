@@ -24,41 +24,45 @@
 
 	$.getJSON(flickrAPI, flickrOptions, displayPics);
 	
-
-	var ipanemaBtn = document.createElement("button");
-	ipanemaBtn.id = "ipanema";
-	var ipanemaText = document.createTextNode("IPANEMA");
-	ipanemaBtn.appendChild(ipanemaText);
-	container.appendChild(ipanemaBtn);
-	$("body").on('click', 'button', function(){
-		alert($(this).text());
-	});
-
-	*/
-
+*/
 	var ipanemaBtn = document.createElement("button");
 	ipanemaBtn.id = "ipanema";
 	var ipanemaText = document.createTextNode("IPANEMA");
 	ipanemaBtn.appendChild(ipanemaText);
 	container.appendChild(ipanemaBtn);
 
-	
-		// CREATE LEBLON BUTTON
 	var leblonBtn = document.createElement("button");
 	leblonBtn.id = "leblon";
 	var leblonText = document.createTextNode("LEBLON");
 	leblonBtn.appendChild(leblonText);
 	leblonBtn.style.marginLeft = "10px";
 	container.appendChild(leblonBtn);
-		
-		// CREATE COPACABANA BUTTON
+
 	var copacabanaBtn = document.createElement("button");
 	copacabanaBtn.id = "copacabana";
 	var copacabanaText = document.createTextNode("COPACABANA");
 	copacabanaBtn.appendChild(copacabanaText);
 	copacabanaBtn.style.marginLeft = "10px";
 	container.appendChild(copacabanaBtn);
+	
+	$("body").on('click', 'button', function(){
+		alert($(this).text());
+	});
+	
+	
 
+	var novo = document.createElement("button");
+	novo.id = "novo";
+	var novoText = document.createTextNode("NOVO");
+	novo.appendChild(novoText);
+	container.appendChild(novo);
+	$("#novo").on("click", 'button', function(){
+		alert("Esse é o butao novo braaaans");
+	});
+
+
+	
+	
 
 		// ADD CONTAINER TO BODY
 	document.body.appendChild(container);		
