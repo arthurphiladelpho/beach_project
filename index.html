@@ -1,0 +1,67 @@
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script>
+	$(document).ready(function(){
+	var container = document.createElement("div");
+	container.id = "container";
+	/*
+	var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+	var beach = "ipanema";
+	var flickrOptions = {
+		tags: beach,
+		format: "json"
+		};
+	function displayPics(data){
+		var resultsHTML = "<ul>";
+		$.each(data.items, function(i, pic) {
+			resultsHTML += "<li>";
+			resultsHTML += '<a href="' + pic.link + ' " class="image">';
+			resultsHTML += '<img src="' + pic.media.m + ' "></a></li>';
+		});
+		resultsHTML += "</ul>";
+		container.innerHTML = resultsHTML;
+	}
+
+	$.getJSON(flickrAPI, flickrOptions, displayPics);
+	
+
+	var ipanemaBtn = document.createElement("button");
+	ipanemaBtn.id = "ipanema";
+	var ipanemaText = document.createTextNode("IPANEMA");
+	ipanemaBtn.appendChild(ipanemaText);
+	container.appendChild(ipanemaBtn);
+	$("body").on('click', 'button', function(){
+		alert($(this).text());
+	});
+
+	*/
+
+	var ipanemaBtn = document.createElement("button");
+	ipanemaBtn.id = "ipanema";
+	var ipanemaText = document.createTextNode("IPANEMA");
+	ipanemaBtn.appendChild(ipanemaText);
+	container.appendChild(ipanemaBtn);
+
+	
+		// CREATE LEBLON BUTTON
+	var leblonBtn = document.createElement("button");
+	leblonBtn.id = "leblon";
+	var leblonText = document.createTextNode("LEBLON");
+	leblonBtn.appendChild(leblonText);
+	leblonBtn.style.marginLeft = "10px";
+	container.appendChild(leblonBtn);
+		
+		// CREATE COPACABANA BUTTON
+	var copacabanaBtn = document.createElement("button");
+	copacabanaBtn.id = "copacabana";
+	var copacabanaText = document.createTextNode("COPACABANA");
+	copacabanaBtn.appendChild(copacabanaText);
+	copacabanaBtn.style.marginLeft = "10px";
+	container.appendChild(copacabanaBtn);
+
+
+		// ADD CONTAINER TO BODY
+	document.body.appendChild(container);		
+ });
+</script>
+
